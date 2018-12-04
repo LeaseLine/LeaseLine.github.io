@@ -13,11 +13,11 @@
 
 ## Display user contents in pages
 
-- All user text fields (listing description, user description, messages between users, ...) must be filtered in twig 
+- All user text fields (listing description, user description, messages between users, ...) must be filtered in twig
 templates through the twig filter `strip_private_info`.
 
         Ex: listing_translation.description|strip_private_info
-    
+
 ## Versioning
 
 - Don't push modifications breaking major functionalities and complicating the app usage.
@@ -28,13 +28,8 @@ templates through the twig filter `strip_private_info`.
 - Some texts must be added through Twig global parameters and not be hardcoded in twig templates.
 
         Ex: The phone is setted through cocorico_phone twig global parameter
-        
+
 
 ## Twig
 
 - Close all block to not break editor indentation.
-
-        Ex: {% block header_class %}header-green{%- endblock -%} instead  {% block header_class %}header-green
-    
-        
-    
